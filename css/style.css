@@ -1,0 +1,56 @@
+/*h1 {color: crimson}
+
+
+.cary div {border-top: 1px solid black;
+    border-bottom: 1px solid black;}
+
+div.podklad {background-color: darkgoldenrod}
+
+div.barva {background-color: darkgray}
+*/
+
+ul a { color: #b80370;
+    text-decoration: none;}
+
+ul a:hover {text-decoration: underline}
+
+.clean { clear: left; }
+
+li {
+   display: inline;
+}
+
+
+li:first-child {
+    background-image: url("../images/logo.png");
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    padding-left: 24px
+}
+div.nadpis{
+    background-color: darkgoldenrod;
+/*    border: 1px solid red */
+}
+div.img{
+    float: left;
+    width: 160px;
+    background-color: darkgoldenrod;
+    /*    border: 1px solid red */
+}
+div.title{
+    width: 200px;
+/*    border: 1px solid gray; */
+    float: left;
+    margin-top: 14px;
+    background-color: darkgoldenrod;
+    font-size: 26px;
+}
+
+div.seda {background-color: rgb(122, 122, 121)
+}
+
+div.test{ border: 2px}
+
+div.podklad {background-color: #9be3eb}
+
+.cary {background-image: url("../images/244ba2c260f5c4e5b990e7320ae2e794.jpg")}

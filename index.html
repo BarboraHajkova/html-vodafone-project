@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Kočkyyyyy</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body class="cary">
+
+<div class="nadpis">
+    <div class="img"><img
+            src="https://g.cz/sites/default/files/styles/image_crop_horizontal/public/field/image/2016/catssss.jpg?itok=zuY8sFXp"
+            height="50"></div>
+    <div class="title">Kočkyyyyy</div>
+    <div class="clean"></div>
+    <ul>
+        <li> ChiliChili</li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+</div>
+
+<hr>
+
+<h1>Kočkyyyyy</h1>
+
+<img src="images/kocka.png" alt="kočka" width="300">
+
+<div class="podklad">
+    <div>Je půl páté ráno… Pardon, na chvíli jsem usnul za chůze, protože, no víte, je půl páté ráno. V tuhle zvláštní
+        dobu, kdy už není noc, ale den ještě nezačal, je při vědomí jen málokdo a máloco. Ve Stromovce, kterou v
+        polospánku klopýtám, není kromě mě ani noha. Vzhůru jsou jen ptáci, kteří ovšem řvou jak zjednaní, a muchničky,
+        které jsou celé nadšené, že jim jde snídaně. Než se vzpamatuji, mám nohy dožrané jako sirota. Asi bude pršet.
+    </div>
+
+    <div class="seda">
+        <hr>
+        <div class="barva">
+            <b>autor:</b> <a href="http://cilichili.cz/autor/jiri-holubec/" title="odkaz na autora" target="_blank">
+            Jiri</a>
+        </div>
+        <hr>
+    </div>
+
+    <div>
+        <table border="1">
+            <tr>
+                <td> fggg</td>
+                <td> fggg</td>
+                <td> fggg</td>
+                <td> fggg</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="test"> TEEEEEEEEST</div>
+    <h2>Diskuze <span id="pocitadlo">(0)</span></h2>
+
+
+    <form id="formular">
+        <div style="display: none">
+            děkujeme za zprávu
+        </div>
+        <div>
+            Jmeno:
+            <input name="jmeno"
+                   id="jmeno"
+                   placeholder="vyplnit jmeno">
+
+
+        </div>
+        <div>
+            text:
+            <input name="text"
+                   id="text"
+                   placeholder="text">
+
+
+        </div>
+
+        <div>
+            <input type="submit" value="Odeslat" onclick="return odeslat()">
+            <div id="komentare"></div>
+            <script type="application/javascript">
+                i = 0;
+
+                function odeslat() {
+                    jmeno = document.getElementById('jmeno');
+                    text = document.getElementById('text');
+                    //alert(jmeno + '   ' + text);
+
+                    //   document.getElementById('text').value = 'fsdt';
+                    //document.getElementsByClassName('test')[0].innerHTML = 'ahoooooooooooj';
+
+                    if (jmeno.value === '') {
+                        alert("vyplňte jméno");
+                        return false;
+
+                    }
+
+                    komentar = '<div><b>' + jmeno.value + ' </b> ' + text.value + '</div>';
+                    komentare = document.getElementById('komentare');
+                    // komentare.innerHTML = komentar;
+
+                    komentare.innerHTML = komentare.innerHTML + komentar;
+
+                    pocitadlo.innerHTML = '<i>(' + (++i) + ')</i>';
+
+                    jmeno.value = '';
+                    text.value = '';
+                    return false;
+
+                }
+            </script>
+
+        </div>
+</body>
+
+</html>
